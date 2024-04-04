@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home Screen Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController restorationIdentifier="HomeScreenController" storyboardIdentifier="HomeScreenController" id="BYZ-38-t0r" customClass="HomeScreenController" customModule="EmergencyApplication" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" id="9UN-mD-tso">
+                                <rect key="frame" x="0.0" y="60" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.23302426934242249" green="0.54706794023513794" blue="0.92000669240951538" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="barTintColor" name="AppColor"/>
+                                <items>
+                                    <navigationItem id="Hw1-Lp-knS">
+                                        <nil key="title"/>
+                                        <rightBarButtonItems>
+                                            <barButtonItem title="Register" style="plain" id="Nrn-YV-gW1">
+                                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="Vku-u8-GOC">
+                                                    <rect key="frame" x="300" y="4.6666666666666679" width="94" height="35"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" title="Register">
+                                                        <color key="baseForegroundColor" systemColor="systemGray5Color"/>
+                                                    </buttonConfiguration>
+                                                    <connections>
+                                                        <action selector="presentRegister:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lMO-r1-oiU"/>
+                                                    </connections>
+                                                </button>
+                                            </barButtonItem>
+                                            <barButtonItem title="Log In as Admin" id="LGJ-bT-OSM">
+                                                <color key="tintColor" systemColor="systemGray5Color"/>
+                                                <connections>
+                                                    <action selector="loginAdmin:" destination="BYZ-38-t0r" id="yD8-g5-XcC"/>
+                                                </connections>
+                                            </barButtonItem>
+                                            <barButtonItem title="Log In" style="plain" id="2sY-dj-fKg">
+                                                <inset key="landscapeImageInsets" minX="0.0" minY="4" maxX="0.0" maxY="0.0"/>
+                                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="Zkr-OP-WAj">
+                                                    <rect key="frame" x="90" y="4.6666666666666679" width="70.333333333333314" height="35"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" title="Log In">
+                                                        <color key="baseForegroundColor" systemColor="systemGray5Color"/>
+                                                    </buttonConfiguration>
+                                                    <connections>
+                                                        <segue destination="hqc-1d-ZyB" kind="presentation" id="lX0-fM-rac"/>
+                                                    </connections>
+                                                </button>
+                                            </barButtonItem>
+                                        </rightBarButtonItems>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="planet" translatesAutoresizingMaskIntoConstraints="NO" id="GDT-dW-bO8">
+                                <rect key="frame" x="20" y="208" width="374" height="393"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pin" translatesAutoresizingMaskIntoConstraints="NO" id="KUK-Vp-6fw">
+                                <rect key="frame" x="153" y="216" width="109" height="80"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KUK-Vp-6fw" secondAttribute="bottom" constant="566" id="4Ab-VO-DO4"/>
+                            <constraint firstItem="KUK-Vp-6fw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="153" id="69T-6y-Ghi"/>
+                            <constraint firstItem="9UN-mD-tso" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="L2q-HS-XRf"/>
+                            <constraint firstItem="9UN-mD-tso" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="L7l-Z9-Gri"/>
+                            <constraint firstItem="9UN-mD-tso" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="aYa-Kw-LvJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KUK-Vp-6fw" secondAttribute="trailing" constant="152" id="bwG-ta-dEf"/>
+                            <constraint firstItem="9UN-mD-tso" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="c2L-t8-hsK"/>
+                            <constraint firstItem="9UN-mD-tso" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="dCR-uc-9LL"/>
+                            <constraint firstItem="9UN-mD-tso" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jwE-Dc-SsW"/>
+                            <constraint firstItem="9UN-mD-tso" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="60" id="m9A-Gt-HdA"/>
+                            <constraint firstItem="9UN-mD-tso" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="mOf-hz-nkb"/>
+                            <constraint firstItem="9UN-mD-tso" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="n5a-Ub-aei"/>
+                            <constraint firstItem="KUK-Vp-6fw" firstAttribute="top" secondItem="9UN-mD-tso" secondAttribute="bottom" constant="112" id="oS6-E3-VIh"/>
+                            <constraint firstItem="9UN-mD-tso" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tNn-qj-A0A"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="L2q-HS-XRf"/>
+                                <exclude reference="L7l-Z9-Gri"/>
+                                <exclude reference="aYa-Kw-LvJ"/>
+                                <exclude reference="c2L-t8-hsK"/>
+                                <exclude reference="dCR-uc-9LL"/>
+                                <exclude reference="jwE-Dc-SsW"/>
+                                <exclude reference="m9A-Gt-HdA"/>
+                                <exclude reference="mOf-hz-nkb"/>
+                                <exclude reference="n5a-Ub-aei"/>
+                                <exclude reference="tNn-qj-A0A"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="n5a-Ub-aei"/>
+                                <include reference="tNn-qj-A0A"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="L7l-Z9-Gri"/>
+                                <include reference="m9A-Gt-HdA"/>
+                                <include reference="mOf-hz-nkb"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="L2q-HS-XRf"/>
+                                <include reference="c2L-t8-hsK"/>
+                                <include reference="dCR-uc-9LL"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="loginAsAdmin" destination="LGJ-bT-OSM" id="dgn-dv-9kq"/>
+                        <outlet property="loginButton" destination="2sY-dj-fKg" id="65q-FV-Ymu"/>
+                        <outlet property="navBar" destination="9UN-mD-tso" id="OKs-6Q-zJL"/>
+                        <outlet property="pin" destination="KUK-Vp-6fw" id="4Oq-cG-zko"/>
+                        <outlet property="registerButton" destination="Nrn-YV-gW1" id="Z3d-l8-avS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="362.7906976744186" y="70.815450643776828"/>
+        </scene>
+        <!--Login Controller-->
+        <scene sceneID="fGm-O0-RGH">
+            <objects>
+                <viewController id="sMb-x7-f8N" customClass="LoginController" customModule="EmergencyApplication" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FtF-Jo-rGQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder=" Username or Email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="z3i-sE-qIL">
+                                <rect key="frame" x="20" y="221" width="374" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="ITD-4x-3rY"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="Nhn-F6-yzW"/>
+                                    <constraint firstAttribute="height" constant="35" id="PoS-qh-NNm"/>
+                                    <constraint firstAttribute="height" constant="45" id="fJP-QR-CzK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MalayalamSangamMN" family="Malayalam Sangam MN" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="ITD-4x-3rY"/>
+                                        <exclude reference="Nhn-F6-yzW"/>
+                                        <exclude reference="PoS-qh-NNm"/>
+                                        <exclude reference="fJP-QR-CzK"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="ITD-4x-3rY"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <fontDescription key="fontDescription" name="MalayalamSangamMN" family="Malayalam Sangam MN" pointSize="16"/>
+                                    <mask key="constraints">
+                                        <include reference="PoS-qh-NNm"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="MalayalamSangamMN" family="Malayalam Sangam MN" pointSize="20"/>
+                                    <mask key="constraints">
+                                        <include reference="Nhn-F6-yzW"/>
+                                        <include reference="fJP-QR-CzK"/>
+                                    </mask>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder=" Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="2DQ-Na-cPp">
+                                <rect key="frame" x="20" y="286" width="374" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="0OA-qa-Hk2"/>
+                                    <constraint firstAttribute="height" constant="35" id="XyC-4b-NCk"/>
+                                    <constraint firstAttribute="height" constant="45" id="h0A-OW-veP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MalayalamSangamMN" family="Malayalam Sangam MN" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="0OA-qa-Hk2"/>
+                                        <exclude reference="XyC-4b-NCk"/>
+                                        <exclude reference="h0A-OW-veP"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="XyC-4b-NCk"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <fontDescription key="fontDescription" name="MalayalamSangamMN" family="Malayalam Sangam MN" pointSize="16"/>
+                                    <mask key="constraints">
+                                        <include reference="0OA-qa-Hk2"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="MalayalamSangamMN" family="Malayalam Sangam MN" pointSize="20"/>
+                                    <mask key="constraints">
+                                        <include reference="h0A-OW-veP"/>
+                                    </mask>
+                                </variation>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C8J-Em-kG1">
+                                <rect key="frame" x="171.66666666666666" y="96" width="71" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="mEQ-oi-6PI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MalayalamSangamMN" family="Malayalam Sangam MN" pointSize="30"/>
+                                <color key="textColor" name="HomeScreenButtonColor"/>
+                                <color key="highlightedColor" systemColor="linkColor"/>
+                                <color key="shadowColor" systemColor="labelColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="mEQ-oi-6PI"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <fontDescription key="fontDescription" name="MalayalamSangamMN" family="Malayalam Sangam MN" pointSize="30"/>
+                                    <mask key="constraints">
+                                        <include reference="mEQ-oi-6PI"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="MalayalamSangamMN" family="Malayalam Sangam MN" pointSize="45"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Su7-r8-Ypy">
+                                <rect key="frame" x="20" y="380" width="374" height="35"/>
+                                <color key="backgroundColor" name="HomeScreenButtonColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="3I8-Mc-Ykn"/>
+                                    <constraint firstAttribute="height" constant="45" id="MiJ-kb-lP8"/>
+                                    <constraint firstAttribute="height" constant="35" id="POx-oh-dCI"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemGray5Color"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Log In"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="3I8-Mc-Ykn"/>
+                                        <exclude reference="MiJ-kb-lP8"/>
+                                        <exclude reference="POx-oh-dCI"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="3I8-Mc-Ykn"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="POx-oh-dCI"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="MiJ-kb-lP8"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="loginTappedWith_sender:" destination="sMb-x7-f8N" eventType="touchUpInside" id="Ckg-gq-nIl"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot your" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldl-lO-unJ">
+                                <rect key="frame" x="151.66666666666666" y="351" width="79" height="19"/>
+                                <fontDescription key="fontDescription" name="MalayalamSangamMN" family="Malayalam Sangam MN" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lXS-1M-BGd">
+                                <rect key="frame" x="220.66666666666666" y="344" width="91.333333333333343" height="33"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="username">
+                                    <fontDescription key="titleFontDescription" name="MalayalamSangamMN" family="Malayalam Sangam MN" pointSize="16"/>
+                                    <color key="baseForegroundColor" name="HomeScreenButtonColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="forgotUsernameTappedWith_sender:" destination="sMb-x7-f8N" eventType="touchUpInside" id="eKF-T9-etf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bHr-as-PQL">
+                                <rect key="frame" x="302" y="351" width="14" height="19"/>
+                                <fontDescription key="fontDescription" name="MalayalamSangamMN" family="Malayalam Sangam MN" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="93z-Ns-yvc">
+                                <rect key="frame" x="386" y="351" width="8" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="o0D-3j-A2L"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MalayalamSangamMN" family="Malayalam Sangam MN" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="o0D-3j-A2L"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="o0D-3j-A2L"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQN-QM-tae">
+                                <rect key="frame" x="306" y="344" width="88" height="33"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="password">
+                                    <fontDescription key="titleFontDescription" name="MalayalamSangamMN" family="Malayalam Sangam MN" pointSize="16"/>
+                                    <color key="baseForegroundColor" name="HomeScreenButtonColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="forgotPasswordTappedWith_sender:" destination="sMb-x7-f8N" eventType="touchUpInside" id="Et5-o7-MnN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DTN-HY-sMd">
+                                <rect key="frame" x="155" y="732" width="104" height="31"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Create account">
+                                            <attributes>
+                                                <color key="NSColor" name="HomeScreenButtonColor"/>
+                                                <font key="NSFont" size="16" name="MalayalamSangamMN"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="createAccountTappedWith_sender:" destination="sMb-x7-f8N" eventType="touchUpInside" id="HJq-j0-Xd8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="okl-T7-TcB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="okl-T7-TcB" firstAttribute="bottom" secondItem="DTN-HY-sMd" secondAttribute="bottom" constant="50" id="0wb-gv-IIv"/>
+                            <constraint firstItem="DTN-HY-sMd" firstAttribute="top" secondItem="2DQ-Na-cPp" secondAttribute="bottom" constant="20" id="513-uP-PAz"/>
+                            <constraint firstItem="okl-T7-TcB" firstAttribute="trailing" secondItem="2DQ-Na-cPp" secondAttribute="trailing" constant="20" id="6DD-yp-RT8"/>
+                            <constraint firstItem="93z-Ns-yvc" firstAttribute="top" secondItem="2DQ-Na-cPp" secondAttribute="bottom" constant="30" id="6bV-Fo-yey"/>
+                            <constraint firstItem="okl-T7-TcB" firstAttribute="trailing" secondItem="Su7-r8-Ypy" secondAttribute="trailing" constant="20" id="7LY-8Q-qXa"/>
+                            <constraint firstItem="z3i-sE-qIL" firstAttribute="leading" relation="lessThanOrEqual" secondItem="okl-T7-TcB" secondAttribute="leading" constant="20" id="8Li-fu-vA6"/>
+                            <constraint firstItem="aQN-QM-tae" firstAttribute="centerY" secondItem="93z-Ns-yvc" secondAttribute="centerY" id="9Ix-If-e6N"/>
+                            <constraint firstItem="okl-T7-TcB" firstAttribute="trailing" secondItem="Su7-r8-Ypy" secondAttribute="trailing" constant="20" id="9mv-eJ-BSy"/>
+                            <constraint firstItem="z3i-sE-qIL" firstAttribute="top" secondItem="okl-T7-TcB" secondAttribute="top" constant="50" id="9w6-Dq-zd2"/>
+                            <constraint firstItem="93z-Ns-yvc" firstAttribute="top" secondItem="okl-T7-TcB" secondAttribute="bottom" constant="-101" id="BZ2-0e-Ah0"/>
+                            <constraint firstAttribute="trailing" secondItem="93z-Ns-yvc" secondAttribute="trailing" constant="20" id="BdT-Op-q7U"/>
+                            <constraint firstItem="C8J-Em-kG1" firstAttribute="top" secondItem="okl-T7-TcB" secondAttribute="top" constant="20" id="Bhl-FD-Kgx"/>
+                            <constraint firstItem="C8J-Em-kG1" firstAttribute="centerX" secondItem="FtF-Jo-rGQ" secondAttribute="centerX" id="FhK-pf-TdF"/>
+                            <constraint firstItem="DTN-HY-sMd" firstAttribute="top" secondItem="okl-T7-TcB" secondAttribute="bottom" constant="-56" id="J3P-S1-kGG"/>
+                            <constraint firstItem="2DQ-Na-cPp" firstAttribute="top" secondItem="okl-T7-TcB" secondAttribute="bottom" constant="-141" id="JSQ-7c-udK"/>
+                            <constraint firstItem="2DQ-Na-cPp" firstAttribute="top" secondItem="z3i-sE-qIL" secondAttribute="bottom" constant="20" id="KSJ-72-iCb"/>
+                            <constraint firstItem="2DQ-Na-cPp" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="okl-T7-TcB" secondAttribute="leading" constant="20" id="LRs-ft-uhb"/>
+                            <constraint firstItem="okl-T7-TcB" firstAttribute="trailing" secondItem="2DQ-Na-cPp" secondAttribute="trailing" constant="20" id="MfA-BY-hkS"/>
+                            <constraint firstItem="z3i-sE-qIL" firstAttribute="top" secondItem="C8J-Em-kG1" secondAttribute="bottom" constant="95" id="N2m-1J-3yz"/>
+                            <constraint firstItem="bHr-as-PQL" firstAttribute="top" secondItem="aQN-QM-tae" secondAttribute="bottom" constant="-26" id="Nk7-Kx-KFF"/>
+                            <constraint firstItem="ldl-lO-unJ" firstAttribute="centerY" secondItem="lXS-1M-BGd" secondAttribute="centerY" id="Otb-nl-uAV"/>
+                            <constraint firstAttribute="trailing" secondItem="93z-Ns-yvc" secondAttribute="trailing" constant="20" id="Q3o-fr-eJ9"/>
+                            <constraint firstItem="lXS-1M-BGd" firstAttribute="centerY" secondItem="bHr-as-PQL" secondAttribute="centerY" id="R5a-a3-5oU"/>
+                            <constraint firstItem="DTN-HY-sMd" firstAttribute="centerX" secondItem="FtF-Jo-rGQ" secondAttribute="centerX" id="RSk-fb-ECJ"/>
+                            <constraint firstItem="okl-T7-TcB" firstAttribute="trailing" secondItem="93z-Ns-yvc" secondAttribute="trailing" constant="60" id="RhN-Ii-cKo"/>
+                            <constraint firstItem="DTN-HY-sMd" firstAttribute="leading" secondItem="FtF-Jo-rGQ" secondAttribute="leading" constant="60" id="SsP-LC-KO3"/>
+                            <constraint firstItem="z3i-sE-qIL" firstAttribute="leading" secondItem="okl-T7-TcB" secondAttribute="leading" constant="20" id="TDP-sT-Ek0"/>
+                            <constraint firstItem="Su7-r8-Ypy" firstAttribute="leading" secondItem="okl-T7-TcB" secondAttribute="leading" constant="20" id="Tau-3V-Oa0"/>
+                            <constraint firstItem="z3i-sE-qIL" firstAttribute="leading" secondItem="okl-T7-TcB" secondAttribute="leading" constant="60" id="U7a-cp-eVF"/>
+                            <constraint firstItem="ldl-lO-unJ" firstAttribute="leading" secondItem="okl-T7-TcB" secondAttribute="leading" constant="589" id="V55-df-QCh"/>
+                            <constraint firstItem="bHr-as-PQL" firstAttribute="centerY" secondItem="aQN-QM-tae" secondAttribute="centerY" id="VWG-WY-T2y"/>
+                            <constraint firstItem="okl-T7-TcB" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="z3i-sE-qIL" secondAttribute="trailing" constant="20" id="Vre-Gm-hMQ"/>
+                            <constraint firstItem="z3i-sE-qIL" firstAttribute="top" secondItem="okl-T7-TcB" secondAttribute="top" constant="162" id="Wdc-OQ-pPm"/>
+                            <constraint firstItem="C8J-Em-kG1" firstAttribute="centerX" secondItem="FtF-Jo-rGQ" secondAttribute="centerX" id="YFc-12-vfb"/>
+                            <constraint firstItem="okl-T7-TcB" firstAttribute="trailing" secondItem="z3i-sE-qIL" secondAttribute="trailing" constant="20" id="YIZ-Dr-TDO"/>
+                            <constraint firstItem="C8J-Em-kG1" firstAttribute="top" secondItem="okl-T7-TcB" secondAttribute="top" constant="8" id="YYo-Ma-UgB"/>
+                            <constraint firstItem="okl-T7-TcB" firstAttribute="trailing" secondItem="2DQ-Na-cPp" secondAttribute="trailing" constant="20" id="YZj-fR-LcS"/>
+                            <constraint firstItem="2DQ-Na-cPp" firstAttribute="leading" secondItem="okl-T7-TcB" secondAttribute="leading" constant="20" id="aSe-4z-6aF"/>
+                            <constraint firstItem="bHr-as-PQL" firstAttribute="leading" secondItem="lXS-1M-BGd" secondAttribute="trailing" constant="-10" id="b8C-QG-zpP"/>
+                            <constraint firstItem="2DQ-Na-cPp" firstAttribute="top" secondItem="z3i-sE-qIL" secondAttribute="bottom" constant="30" id="bGT-Z8-Jyt"/>
+                            <constraint firstItem="okl-T7-TcB" firstAttribute="trailing" secondItem="Su7-r8-Ypy" secondAttribute="trailing" constant="20" id="bgf-Ml-Vd5"/>
+                            <constraint firstItem="okl-T7-TcB" firstAttribute="trailing" secondItem="z3i-sE-qIL" secondAttribute="trailing" constant="20" id="dd5-S6-7Sb"/>
+                            <constraint firstItem="2DQ-Na-cPp" firstAttribute="centerX" secondItem="FtF-Jo-rGQ" secondAttribute="centerX" id="fPf-0n-4sk"/>
+                            <constraint firstItem="lXS-1M-BGd" firstAttribute="leading" secondItem="ldl-lO-unJ" secondAttribute="trailing" constant="-10" id="gAl-EV-Fbd"/>
+                            <constraint firstItem="Su7-r8-Ypy" firstAttribute="top" secondItem="93z-Ns-yvc" secondAttribute="bottom" constant="10" id="h2K-GW-x1Q"/>
+                            <constraint firstItem="Su7-r8-Ypy" firstAttribute="top" secondItem="okl-T7-TcB" secondAttribute="bottom" constant="-76" id="iWD-C9-MWm"/>
+                            <constraint firstItem="2DQ-Na-cPp" firstAttribute="leading" secondItem="okl-T7-TcB" secondAttribute="leading" constant="60" id="lDg-bn-BE3"/>
+                            <constraint firstItem="aQN-QM-tae" firstAttribute="leading" secondItem="bHr-as-PQL" secondAttribute="trailing" constant="-10" id="m2c-9T-ucz"/>
+                            <constraint firstItem="C8J-Em-kG1" firstAttribute="centerX" secondItem="FtF-Jo-rGQ" secondAttribute="centerX" id="mTE-qr-cPG"/>
+                            <constraint firstItem="Su7-r8-Ypy" firstAttribute="top" secondItem="aQN-QM-tae" secondAttribute="bottom" constant="10" id="mWO-61-geX"/>
+                            <constraint firstItem="93z-Ns-yvc" firstAttribute="top" secondItem="2DQ-Na-cPp" secondAttribute="bottom" constant="20" id="miF-fb-Ce6"/>
+                            <constraint firstItem="93z-Ns-yvc" firstAttribute="trailing" secondItem="aQN-QM-tae" secondAttribute="trailing" id="nsB-Vn-AeC"/>
+                            <constraint firstItem="C8J-Em-kG1" firstAttribute="top" secondItem="okl-T7-TcB" secondAttribute="top" constant="5" id="t9T-lt-S7J"/>
+                            <constraint firstItem="DTN-HY-sMd" firstAttribute="leading" secondItem="okl-T7-TcB" secondAttribute="leading" constant="20" id="uIM-OQ-dgy"/>
+                            <constraint firstItem="z3i-sE-qIL" firstAttribute="centerX" secondItem="FtF-Jo-rGQ" secondAttribute="centerX" id="xd6-Gq-zff"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="0wb-gv-IIv"/>
+                                <exclude reference="6DD-yp-RT8"/>
+                                <exclude reference="7LY-8Q-qXa"/>
+                                <exclude reference="9mv-eJ-BSy"/>
+                                <exclude reference="MfA-BY-hkS"/>
+                                <exclude reference="RhN-Ii-cKo"/>
+                                <exclude reference="Vre-Gm-hMQ"/>
+                                <exclude reference="YIZ-Dr-TDO"/>
+                                <exclude reference="YZj-fR-LcS"/>
+                                <exclude reference="bgf-Ml-Vd5"/>
+                                <exclude reference="dd5-S6-7Sb"/>
+                                <exclude reference="Bhl-FD-Kgx"/>
+                                <exclude reference="FhK-pf-TdF"/>
+                                <exclude reference="YFc-12-vfb"/>
+                                <exclude reference="YYo-Ma-UgB"/>
+                                <exclude reference="mTE-qr-cPG"/>
+                                <exclude reference="t9T-lt-S7J"/>
+                                <exclude reference="8Li-fu-vA6"/>
+                                <exclude reference="9w6-Dq-zd2"/>
+                                <exclude reference="N2m-1J-3yz"/>
+                                <exclude reference="TDP-sT-Ek0"/>
+                                <exclude reference="U7a-cp-eVF"/>
+                                <exclude reference="Wdc-OQ-pPm"/>
+                                <exclude reference="xd6-Gq-zff"/>
+                                <exclude reference="JSQ-7c-udK"/>
+                                <exclude reference="KSJ-72-iCb"/>
+                                <exclude reference="LRs-ft-uhb"/>
+                                <exclude reference="aSe-4z-6aF"/>
+                                <exclude reference="bGT-Z8-Jyt"/>
+                                <exclude reference="fPf-0n-4sk"/>
+                                <exclude reference="lDg-bn-BE3"/>
+                                <exclude reference="Tau-3V-Oa0"/>
+                                <exclude reference="h2K-GW-x1Q"/>
+                                <exclude reference="iWD-C9-MWm"/>
+                                <exclude reference="mWO-61-geX"/>
+                                <exclude reference="V55-df-QCh"/>
+                                <exclude reference="6bV-Fo-yey"/>
+                                <exclude reference="BZ2-0e-Ah0"/>
+                                <exclude reference="BdT-Op-q7U"/>
+                                <exclude reference="Q3o-fr-eJ9"/>
+                                <exclude reference="miF-fb-Ce6"/>
+                                <exclude reference="513-uP-PAz"/>
+                                <exclude reference="J3P-S1-kGG"/>
+                                <exclude reference="RSk-fb-ECJ"/>
+                                <exclude reference="SsP-LC-KO3"/>
+                                <exclude reference="uIM-OQ-dgy"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="6DD-yp-RT8"/>
+                                <include reference="RhN-Ii-cKo"/>
+                                <include reference="bgf-Ml-Vd5"/>
+                                <include reference="dd5-S6-7Sb"/>
+                                <include reference="YFc-12-vfb"/>
+                                <include reference="t9T-lt-S7J"/>
+                                <include reference="9w6-Dq-zd2"/>
+                                <include reference="U7a-cp-eVF"/>
+                                <include reference="JSQ-7c-udK"/>
+                                <include reference="lDg-bn-BE3"/>
+                                <include reference="iWD-C9-MWm"/>
+                                <include reference="V55-df-QCh"/>
+                                <include reference="BZ2-0e-Ah0"/>
+                                <include reference="J3P-S1-kGG"/>
+                                <include reference="SsP-LC-KO3"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="0wb-gv-IIv"/>
+                                <include reference="7LY-8Q-qXa"/>
+                                <include reference="MfA-BY-hkS"/>
+                                <include reference="Vre-Gm-hMQ"/>
+                                <include reference="YYo-Ma-UgB"/>
+                                <include reference="mTE-qr-cPG"/>
+                                <include reference="8Li-fu-vA6"/>
+                                <include reference="N2m-1J-3yz"/>
+                                <include reference="xd6-Gq-zff"/>
+                                <include reference="LRs-ft-uhb"/>
+                                <include reference="bGT-Z8-Jyt"/>
+                                <include reference="fPf-0n-4sk"/>
+                                <include reference="Tau-3V-Oa0"/>
+                                <include reference="h2K-GW-x1Q"/>
+                                <include reference="6bV-Fo-yey"/>
+                                <include reference="Q3o-fr-eJ9"/>
+                                <include reference="RSk-fb-ECJ"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="9mv-eJ-BSy"/>
+                                <include reference="YIZ-Dr-TDO"/>
+                                <include reference="YZj-fR-LcS"/>
+                                <include reference="Bhl-FD-Kgx"/>
+                                <include reference="FhK-pf-TdF"/>
+                                <include reference="TDP-sT-Ek0"/>
+                                <include reference="Wdc-OQ-pPm"/>
+                                <include reference="KSJ-72-iCb"/>
+                                <include reference="aSe-4z-6aF"/>
+                                <include reference="mWO-61-geX"/>
+                                <include reference="BdT-Op-q7U"/>
+                                <include reference="miF-fb-Ce6"/>
+                                <include reference="513-uP-PAz"/>
+                                <include reference="uIM-OQ-dgy"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="RbQ-q4-eyx">
+                        <barButtonItem key="rightBarButtonItem" image="cancelGrey" id="QNJ-cy-0VQ">
+                            <connections>
+                                <action selector="exitButtonTapped:" destination="sMb-x7-f8N" id="ajE-l4-fLK"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="loginButton" destination="Su7-r8-Ypy" id="2TN-1a-51f"/>
+                        <outlet property="passwordConstraint" destination="fPf-0n-4sk" id="f2J-6Q-e2a"/>
+                        <outlet property="passwordTextfield" destination="2DQ-Na-cPp" id="9Or-Cf-u6d"/>
+                        <outlet property="usernameConstraint" destination="xd6-Gq-zff" id="sSy-o4-Dxw"/>
+                        <outlet property="usernameTextfield" destination="z3i-sE-qIL" id="1qq-Ii-90r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m4G-VG-iVG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2270.4225352112676" y="75.572519083969468"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="lvZ-0J-4Ko">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="hqc-1d-ZyB" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <value key="contentSizeForViewInPopover" type="size" width="0.0" height="0.0"/>
+                    <splitViewDetailSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lTH-Tr-o49">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="sMb-x7-f8N" kind="relationship" relationship="rootViewController" id="xK0-IA-hhu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kv9-oC-b4Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1360.8695652173915" y="76.339285714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cancelGrey" width="16" height="16"/>
+        <image name="pin" width="100" height="127.33333587646484"/>
+        <image name="planet" width="1400" height="1400"/>
+        <namedColor name="AppColor">
+            <color red="0.14509803921568629" green="0.32549019607843138" blue="0.58431372549019611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="HomeScreenButtonColor">
+            <color red="0.14509803921568629" green="0.32549019607843138" blue="0.58431372549019611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyAccountController" customModule="EmergencyApplication" customModuleProvider="target">
+            <connections>
+                <outlet property="dangerButton" destination="gEz-Jz-dTG" id="6z3-ZT-tlJ"/>
+                <outlet property="dangerLabel" destination="z3F-kp-K2B" id="rrz-bX-tEW"/>
+                <outlet property="latitudeLabel" destination="0xt-q3-x1b" id="oPO-ey-nve"/>
+                <outlet property="longitudeLabel" destination="icR-0H-5iV" id="qVG-ER-gYF"/>
+                <outlet property="mapView" destination="fjV-cs-Drm" id="oBZ-ie-6nH"/>
+                <outlet property="usernameLabel" destination="abw-Ra-WyH" id="vT2-c0-CDd"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="fjV-cs-Drm">
+                    <rect key="frame" x="0.0" y="481" width="414" height="415"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="vI8-Sl-nNJ"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="vI8-Sl-nNJ"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=compact-widthClass=regular">
+                        <mask key="constraints">
+                            <include reference="vI8-Sl-nNJ"/>
+                        </mask>
+                    </variation>
+                </mapView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Latitude:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u3A-cc-qnl">
+                    <rect key="frame" x="20" y="440" width="66" height="21"/>
+                    <fontDescription key="fontDescription" name="MalayalamSangamMN" family="Malayalam Sangam MN" pointSize="18"/>
+                    <color key="textColor" systemColor="systemGray5Color"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0xt-q3-x1b">
+                    <rect key="frame" x="92" y="440" width="80" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="QXK-DY-fBw"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MalayalamSangamMN" family="Malayalam Sangam MN" pointSize="17"/>
+                    <color key="textColor" systemColor="systemGray5Color"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="icR-0H-5iV">
+                    <rect key="frame" x="284" y="440" width="80" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="x7v-rv-vZB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MalayalamSangamMN" family="Malayalam Sangam MN" pointSize="17"/>
+                    <color key="textColor" systemColor="systemGray5Color"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Jq-l5-7yD">
+                    <rect key="frame" x="20" y="244" width="72" height="36"/>
+                    <fontDescription key="fontDescription" name="MalayalamSangamMN-Bold" family="Malayalam Sangam MN" pointSize="30"/>
+                    <color key="textColor" systemColor="systemGray5Color"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abw-Ra-WyH">
+                    <rect key="frame" x="102" y="244" width="0.0" height="0.0"/>
+                    <fontDescription key="fontDescription" name="MalayalamSangamMN-Bold" family="Malayalam Sangam MN" pointSize="30"/>
+                    <color key="textColor" systemColor="systemGray5Color"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you feel in danger?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wxU-Lu-rBu">
+                    <rect key="frame" x="20" y="280" width="283" height="36"/>
+                    <fontDescription key="fontDescription" name="MalayalamSangamMN-Bold" family="Malayalam Sangam MN" pointSize="30"/>
+                    <color key="textColor" systemColor="systemGray5Color"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gEz-Jz-dTG">
+                    <rect key="frame" x="308" y="277" width="86" height="40"/>
+                    <color key="backgroundColor" systemColor="systemGray5Color"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Vy2-vl-dQz"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Yes">
+                        <fontDescription key="titleFontDescription" name="MalayalamSangamMN-Bold" family="Malayalam Sangam MN" pointSize="20"/>
+                        <color key="baseForegroundColor" name="AppColor"/>
+                        <color key="baseBackgroundColor" systemColor="systemGray5Color"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="dangerButtonPressed" destination="-1" eventType="touchUpInside" id="2pM-c5-GIT"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your location has been sent!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z3F-kp-K2B">
+                    <rect key="frame" x="20" y="362" width="356" height="36"/>
+                    <fontDescription key="fontDescription" name="MalayalamSangamMN-Bold" family="Malayalam Sangam MN" pointSize="30"/>
+                    <color key="textColor" systemColor="systemGray5Color"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Longitude:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sFA-zO-kuu">
+                    <rect key="frame" x="197" y="439" width="81" height="22"/>
+                    <fontDescription key="fontDescription" name="MalayalamSangamMN" family="Malayalam Sangam MN" pointSize="18"/>
+                    <color key="textColor" systemColor="systemGray5Color"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="AppColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="icR-0H-5iV" secondAttribute="trailing" constant="50" id="3le-gV-h5N"/>
+                <constraint firstItem="wxU-Lu-rBu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="54I-yF-Gna"/>
+                <constraint firstAttribute="trailing" secondItem="0xt-q3-x1b" secondAttribute="trailing" constant="60" id="BfC-Dd-SsI"/>
+                <constraint firstItem="fjV-cs-Drm" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="437" id="CoZ-HB-oMP"/>
+                <constraint firstItem="sFA-zO-kuu" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="9" id="FMU-wV-9tC"/>
+                <constraint firstItem="4Jq-l5-7yD" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="200" id="Fbg-a3-in2"/>
+                <constraint firstItem="gEz-Jz-dTG" firstAttribute="leading" secondItem="wxU-Lu-rBu" secondAttribute="trailing" constant="5" id="GN6-Ju-CxR"/>
+                <constraint firstItem="fjV-cs-Drm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="GQz-pm-Tmj"/>
+                <constraint firstItem="z3F-kp-K2B" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="H0d-jb-3u7"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gEz-Jz-dTG" secondAttribute="trailing" constant="20" id="JnA-zv-hdi"/>
+                <constraint firstItem="z3F-kp-K2B" firstAttribute="top" secondItem="gEz-Jz-dTG" secondAttribute="bottom" constant="2" id="MeD-8g-Zp4"/>
+                <constraint firstItem="4Jq-l5-7yD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="Mht-jd-ubG"/>
+                <constraint firstItem="abw-Ra-WyH" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="200" id="O7W-2X-w5u"/>
+                <constraint firstItem="u3A-cc-qnl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="OwO-mm-LvV"/>
+                <constraint firstItem="z3F-kp-K2B" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="Pkt-ui-eKd"/>
+                <constraint firstAttribute="trailing" secondItem="icR-0H-5iV" secondAttribute="trailing" constant="60" id="Q6H-oR-QzH"/>
+                <constraint firstItem="fjV-cs-Drm" firstAttribute="top" secondItem="u3A-cc-qnl" secondAttribute="bottom" constant="20" id="SqV-ga-YQl"/>
+                <constraint firstAttribute="bottom" secondItem="fjV-cs-Drm" secondAttribute="bottom" id="UcO-rC-abE"/>
+                <constraint firstItem="0xt-q3-x1b" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="64" id="Upw-Ob-ZJE"/>
+                <constraint firstItem="icR-0H-5iV" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="WXI-GU-jVe"/>
+                <constraint firstItem="4Jq-l5-7yD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Wa6-VQ-uke"/>
+                <constraint firstItem="abw-Ra-WyH" firstAttribute="leading" secondItem="4Jq-l5-7yD" secondAttribute="trailing" constant="10" id="Y4h-OE-DIY"/>
+                <constraint firstItem="wxU-Lu-rBu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="Y7c-xB-fZy"/>
+                <constraint firstItem="wxU-Lu-rBu" firstAttribute="top" secondItem="4Jq-l5-7yD" secondAttribute="bottom" id="YcV-SA-vXQ"/>
+                <constraint firstItem="z3F-kp-K2B" firstAttribute="top" secondItem="gEz-Jz-dTG" secondAttribute="bottom" constant="45" id="dt4-m6-NMF"/>
+                <constraint firstItem="u3A-cc-qnl" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="64" id="gQT-QZ-YJq"/>
+                <constraint firstItem="fjV-cs-Drm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="hNi-Oi-zf2"/>
+                <constraint firstItem="wxU-Lu-rBu" firstAttribute="top" secondItem="4Jq-l5-7yD" secondAttribute="bottom" constant="2" id="hhA-qJ-dgZ"/>
+                <constraint firstItem="abw-Ra-WyH" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="iVg-7v-mB0"/>
+                <constraint firstAttribute="trailing" secondItem="fjV-cs-Drm" secondAttribute="trailing" id="isA-UZ-R5H"/>
+                <constraint firstItem="icR-0H-5iV" firstAttribute="leading" secondItem="sFA-zO-kuu" secondAttribute="trailing" constant="6" id="jGy-H7-GGS"/>
+                <constraint firstItem="fjV-cs-Drm" firstAttribute="top" secondItem="sFA-zO-kuu" secondAttribute="bottom" constant="20" id="jak-BZ-pfT"/>
+                <constraint firstItem="gEz-Jz-dTG" firstAttribute="leading" secondItem="wxU-Lu-rBu" secondAttribute="trailing" constant="10" id="njO-tA-5wf"/>
+                <constraint firstItem="fjV-cs-Drm" firstAttribute="top" secondItem="0xt-q3-x1b" secondAttribute="bottom" constant="20" id="nwY-Kc-EzE"/>
+                <constraint firstItem="gEz-Jz-dTG" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="35" id="o0g-mk-Cbe"/>
+                <constraint firstItem="fjV-cs-Drm" firstAttribute="top" secondItem="z3F-kp-K2B" secondAttribute="bottom" constant="10" id="o2x-M3-wBa"/>
+                <constraint firstItem="gEz-Jz-dTG" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="233" id="o9j-9b-gZ6"/>
+                <constraint firstItem="4Jq-l5-7yD" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="sNs-b8-PF2"/>
+                <constraint firstItem="abw-Ra-WyH" firstAttribute="leading" secondItem="4Jq-l5-7yD" secondAttribute="trailing" id="sqV-WC-lgy"/>
+                <constraint firstItem="fjV-cs-Drm" firstAttribute="top" secondItem="icR-0H-5iV" secondAttribute="bottom" constant="20" id="wmd-u6-qPu"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fjV-cs-Drm" secondAttribute="trailing" id="ykT-Lp-j3y"/>
+                <constraint firstItem="0xt-q3-x1b" firstAttribute="leading" secondItem="u3A-cc-qnl" secondAttribute="trailing" constant="6" id="ymD-tC-dEI"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="3le-gV-h5N"/>
+                    <exclude reference="JnA-zv-hdi"/>
+                    <exclude reference="ykT-Lp-j3y"/>
+                    <exclude reference="Fbg-a3-in2"/>
+                    <exclude reference="Mht-jd-ubG"/>
+                    <exclude reference="Wa6-VQ-uke"/>
+                    <exclude reference="sNs-b8-PF2"/>
+                    <exclude reference="O7W-2X-w5u"/>
+                    <exclude reference="Y4h-OE-DIY"/>
+                    <exclude reference="iVg-7v-mB0"/>
+                    <exclude reference="sqV-WC-lgy"/>
+                    <exclude reference="54I-yF-Gna"/>
+                    <exclude reference="Y7c-xB-fZy"/>
+                    <exclude reference="YcV-SA-vXQ"/>
+                    <exclude reference="hhA-qJ-dgZ"/>
+                    <exclude reference="H0d-jb-3u7"/>
+                    <exclude reference="MeD-8g-Zp4"/>
+                    <exclude reference="Pkt-ui-eKd"/>
+                    <exclude reference="dt4-m6-NMF"/>
+                    <exclude reference="GN6-Ju-CxR"/>
+                    <exclude reference="njO-tA-5wf"/>
+                    <exclude reference="o0g-mk-Cbe"/>
+                    <exclude reference="o9j-9b-gZ6"/>
+                    <exclude reference="OwO-mm-LvV"/>
+                    <exclude reference="gQT-QZ-YJq"/>
+                    <exclude reference="BfC-Dd-SsI"/>
+                    <exclude reference="Upw-Ob-ZJE"/>
+                    <exclude reference="CoZ-HB-oMP"/>
+                    <exclude reference="SqV-ga-YQl"/>
+                    <exclude reference="UcO-rC-abE"/>
+                    <exclude reference="hNi-Oi-zf2"/>
+                    <exclude reference="jak-BZ-pfT"/>
+                    <exclude reference="nwY-Kc-EzE"/>
+                    <exclude reference="o2x-M3-wBa"/>
+                    <exclude reference="wmd-u6-qPu"/>
+                    <exclude reference="FMU-wV-9tC"/>
+                    <exclude reference="Q6H-oR-QzH"/>
+                    <exclude reference="WXI-GU-jVe"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=compact-widthClass=regular">
+                <mask key="constraints">
+                    <include reference="Mht-jd-ubG"/>
+                    <include reference="sNs-b8-PF2"/>
+                    <include reference="iVg-7v-mB0"/>
+                    <include reference="sqV-WC-lgy"/>
+                    <include reference="Y7c-xB-fZy"/>
+                    <include reference="hhA-qJ-dgZ"/>
+                    <include reference="MeD-8g-Zp4"/>
+                    <include reference="Pkt-ui-eKd"/>
+                    <include reference="njO-tA-5wf"/>
+                    <include reference="o0g-mk-Cbe"/>
+                    <include reference="gQT-QZ-YJq"/>
+                    <include reference="BfC-Dd-SsI"/>
+                    <include reference="Upw-Ob-ZJE"/>
+                    <include reference="o2x-M3-wBa"/>
+                    <include reference="FMU-wV-9tC"/>
+                    <include reference="Q6H-oR-QzH"/>
+                    <include reference="WXI-GU-jVe"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="constraints">
+                    <include reference="3le-gV-h5N"/>
+                    <include reference="JnA-zv-hdi"/>
+                    <include reference="ykT-Lp-j3y"/>
+                    <include reference="Fbg-a3-in2"/>
+                    <include reference="Wa6-VQ-uke"/>
+                    <include reference="O7W-2X-w5u"/>
+                    <include reference="Y4h-OE-DIY"/>
+                    <include reference="54I-yF-Gna"/>
+                    <include reference="YcV-SA-vXQ"/>
+                    <include reference="H0d-jb-3u7"/>
+                    <include reference="dt4-m6-NMF"/>
+                    <include reference="GN6-Ju-CxR"/>
+                    <include reference="o9j-9b-gZ6"/>
+                    <include reference="OwO-mm-LvV"/>
+                    <include reference="CoZ-HB-oMP"/>
+                    <include reference="SqV-ga-YQl"/>
+                    <include reference="UcO-rC-abE"/>
+                    <include reference="hNi-Oi-zf2"/>
+                    <include reference="jak-BZ-pfT"/>
+                    <include reference="nwY-Kc-EzE"/>
+                    <include reference="wmd-u6-qPu"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="137.27678571428569" y="113.04347826086958"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="AppColor">
+            <color red="0.14509803921568629" green="0.32549019607843138" blue="0.58431372549019611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,867 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7C21C9B7293512A800C3DED4 /* Admins.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C21C9B6293512A800C3DED4 /* Admins.swift */; };
+		7C231D07292A84C700A7959E /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C231D06292A84C700A7959E /* Users.swift */; };
+		7C5F71562A45F35F00B45159 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7C5F71552A45F35F00B45159 /* RealmSwift */; };
+		7C5F71582A45F39200B45159 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 7C5F71572A45F39200B45159 /* Realm */; };
+		7C648A98292FC79900F1CBF1 /* Locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C648A97292FC79900F1CBF1 /* Locations.swift */; };
+		7C732C00292E4B1900821983 /* ForgotUsernameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C732BFE292E4B1900821983 /* ForgotUsernameController.swift */; };
+		7C732C04292E4B3100821983 /* ForgotPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C732C02292E4B3100821983 /* ForgotPasswordController.swift */; };
+		7C732C05292E4B3100821983 /* ForgotPasswordController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C732C03292E4B3100821983 /* ForgotPasswordController.xib */; };
+		7C732C07292E4F0700821983 /* ForgotUsernameController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C732C06292E4F0700821983 /* ForgotUsernameController.xib */; };
+		7C732C0A292E593F00821983 /* ChangeUsernameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C732C08292E593F00821983 /* ChangeUsernameController.swift */; };
+		7C732C0B292E593F00821983 /* ChangeUsernameController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C732C09292E593F00821983 /* ChangeUsernameController.xib */; };
+		7C86D6FA292F9542008BA466 /* ChangePasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C86D6F8292F9542008BA466 /* ChangePasswordController.swift */; };
+		7C86D6FB292F9542008BA466 /* ChangePasswordController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C86D6F9292F9542008BA466 /* ChangePasswordController.xib */; };
+		7C89DDF829083424009184BA /* AdminController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C89DDF629083424009184BA /* AdminController.swift */; };
+		7C89DDF929083424009184BA /* AdminController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C89DDF729083424009184BA /* AdminController.xib */; };
+		7C89DDFC29083C57009184BA /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C89DDFA29083C57009184BA /* RegisterController.swift */; };
+		7C89DDFD29083C57009184BA /* RegisterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C89DDFB29083C57009184BA /* RegisterController.xib */; };
+		7CA22F1F29AE1DA60060B054 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CA22F1D29AE1DA60060B054 /* Interface.storyboard */; };
+		7CA22F2129AE1DAA0060B054 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CA22F2029AE1DAA0060B054 /* Assets.xcassets */; };
+		7CA22F2729AE1DAA0060B054 /* EmergencyApplicationWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7CA22F2629AE1DAA0060B054 /* EmergencyApplicationWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7CA22F2C29AE1DAA0060B054 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA22F2B29AE1DAA0060B054 /* InterfaceController.swift */; };
+		7CA22F2E29AE1DAA0060B054 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA22F2D29AE1DAA0060B054 /* ExtensionDelegate.swift */; };
+		7CA22F3029AE1DAA0060B054 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA22F2F29AE1DAA0060B054 /* NotificationController.swift */; };
+		7CA22F3229AE1DAA0060B054 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA22F3129AE1DAA0060B054 /* ComplicationController.swift */; };
+		7CA22F3429AE1DAD0060B054 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CA22F3329AE1DAD0060B054 /* Assets.xcassets */; };
+		7CA22F3929AE1DAD0060B054 /* EmergencyApplicationWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 7CA22F1B29AE1DA60060B054 /* EmergencyApplicationWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7CBCDA18292FF7710098CC6C /* UsersInDanger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBCDA17292FF7710098CC6C /* UsersInDanger.swift */; };
+		7CC4C963290561A30020ED27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC4C962290561A30020ED27 /* AppDelegate.swift */; };
+		7CC4C965290561A30020ED27 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC4C964290561A30020ED27 /* SceneDelegate.swift */; };
+		7CC4C96A290561A30020ED27 /* HomeScreenController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CC4C968290561A30020ED27 /* HomeScreenController.storyboard */; };
+		7CC4C96C290561A60020ED27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CC4C96B290561A60020ED27 /* Assets.xcassets */; };
+		7CC4C96F290561A60020ED27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CC4C96D290561A60020ED27 /* LaunchScreen.storyboard */; };
+		7CC4C977290563480020ED27 /* HomeScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC4C976290563480020ED27 /* HomeScreenController.swift */; };
+		7CC4C979290564EE0020ED27 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC4C978290564EE0020ED27 /* LoginController.swift */; };
+		7CC4C97C290566220020ED27 /* MyAccountController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC4C97A290566220020ED27 /* MyAccountController.swift */; };
+		7CC4C97D290566220020ED27 /* MyAccountController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CC4C97B290566220020ED27 /* MyAccountController.xib */; };
+		7CC8E9E02A4C8EB3000EBD26 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CC8E9DE2A4C854F000EBD26 /* CoreLocation.framework */; };
+		7CCAC401293A0AC1006F6DC0 /* LoginAdminController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCAC3FF293A0AC1006F6DC0 /* LoginAdminController.swift */; };
+		7CCAC402293A0AC1006F6DC0 /* LoginAdminController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CCAC400293A0AC1006F6DC0 /* LoginAdminController.xib */; };
+		7CD0583729C5DECD00BECA46 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CD0583629C5DECD00BECA46 /* HealthKit.framework */; };
+		7CD0583C29C5E97D00BECA46 /* AnimatedHeart.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7CD0583B29C5E97D00BECA46 /* AnimatedHeart.sks */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7CA22F2829AE1DAA0060B054 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7CC4C957290561A30020ED27 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7CA22F2529AE1DAA0060B054;
+			remoteInfo = "EmergencyApplicationWatch WatchKit Extension";
+		};
+		7CA22F3729AE1DAD0060B054 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7CC4C957290561A30020ED27 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7CA22F1A29AE1DA60060B054;
+			remoteInfo = EmergencyApplicationWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7CA22F3D29AE1DAD0060B054 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7CA22F2729AE1DAA0060B054 /* EmergencyApplicationWatch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CA22F4129AE1DAD0060B054 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				7CA22F3929AE1DAD0060B054 /* EmergencyApplicationWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7C21C9B6293512A800C3DED4 /* Admins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Admins.swift; sourceTree = "<group>"; };
+		7C231D06292A84C700A7959E /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		7C648A97292FC79900F1CBF1 /* Locations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locations.swift; sourceTree = "<group>"; };
+		7C732BFE292E4B1900821983 /* ForgotUsernameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotUsernameController.swift; sourceTree = "<group>"; };
+		7C732C02292E4B3100821983 /* ForgotPasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordController.swift; sourceTree = "<group>"; };
+		7C732C03292E4B3100821983 /* ForgotPasswordController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgotPasswordController.xib; sourceTree = "<group>"; };
+		7C732C06292E4F0700821983 /* ForgotUsernameController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgotUsernameController.xib; sourceTree = "<group>"; };
+		7C732C08292E593F00821983 /* ChangeUsernameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeUsernameController.swift; sourceTree = "<group>"; };
+		7C732C09292E593F00821983 /* ChangeUsernameController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangeUsernameController.xib; sourceTree = "<group>"; };
+		7C86D6F8292F9542008BA466 /* ChangePasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordController.swift; sourceTree = "<group>"; };
+		7C86D6F9292F9542008BA466 /* ChangePasswordController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangePasswordController.xib; sourceTree = "<group>"; };
+		7C89DDF629083424009184BA /* AdminController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminController.swift; sourceTree = "<group>"; };
+		7C89DDF729083424009184BA /* AdminController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdminController.xib; sourceTree = "<group>"; };
+		7C89DDFA29083C57009184BA /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
+		7C89DDFB29083C57009184BA /* RegisterController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterController.xib; sourceTree = "<group>"; };
+		7CA22F1B29AE1DA60060B054 /* EmergencyApplicationWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmergencyApplicationWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CA22F1E29AE1DA60060B054 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		7CA22F2029AE1DAA0060B054 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7CA22F2629AE1DAA0060B054 /* EmergencyApplicationWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "EmergencyApplicationWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CA22F2B29AE1DAA0060B054 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		7CA22F2D29AE1DAA0060B054 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		7CA22F2F29AE1DAA0060B054 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		7CA22F3129AE1DAA0060B054 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		7CA22F3329AE1DAD0060B054 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7CA22F3529AE1DAD0060B054 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CA22F3629AE1DAD0060B054 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		7CB9B22429C084EA002183F0 /* EmergencyApplicationWatch WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "EmergencyApplicationWatch WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		7CBCDA17292FF7710098CC6C /* UsersInDanger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersInDanger.swift; sourceTree = "<group>"; };
+		7CC4C95F290561A30020ED27 /* EmergencyApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmergencyApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CC4C962290561A30020ED27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7CC4C964290561A30020ED27 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7CC4C969290561A30020ED27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/HomeScreenController.storyboard; sourceTree = "<group>"; };
+		7CC4C96B290561A60020ED27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7CC4C96E290561A60020ED27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7CC4C970290561A60020ED27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CC4C976290563480020ED27 /* HomeScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenController.swift; sourceTree = "<group>"; };
+		7CC4C978290564EE0020ED27 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		7CC4C97A290566220020ED27 /* MyAccountController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountController.swift; sourceTree = "<group>"; };
+		7CC4C97B290566220020ED27 /* MyAccountController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyAccountController.xib; sourceTree = "<group>"; };
+		7CC8E9DE2A4C854F000EBD26 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		7CCAC3FF293A0AC1006F6DC0 /* LoginAdminController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAdminController.swift; sourceTree = "<group>"; };
+		7CCAC400293A0AC1006F6DC0 /* LoginAdminController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginAdminController.xib; sourceTree = "<group>"; };
+		7CD0583629C5DECD00BECA46 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		7CD0583829C5DED900BECA46 /* EmergencyApplication.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EmergencyApplication.entitlements; sourceTree = "<group>"; };
+		7CD0583B29C5E97D00BECA46 /* AnimatedHeart.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = AnimatedHeart.sks; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7CA22F2329AE1DAA0060B054 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CC4C95C290561A30020ED27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CC8E9E02A4C8EB3000EBD26 /* CoreLocation.framework in Frameworks */,
+				7C5F71582A45F39200B45159 /* Realm in Frameworks */,
+				7CD0583729C5DECD00BECA46 /* HealthKit.framework in Frameworks */,
+				7C5F71562A45F35F00B45159 /* RealmSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7C231CFE292A81BE00A7959E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7CC8E9DE2A4C854F000EBD26 /* CoreLocation.framework */,
+				7CD0583629C5DECD00BECA46 /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7C2C74FD2A486660004FFB7E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7CC4C976290563480020ED27 /* HomeScreenController.swift */,
+				7CC4C978290564EE0020ED27 /* LoginController.swift */,
+				7CC4C97A290566220020ED27 /* MyAccountController.swift */,
+				7CCAC3FF293A0AC1006F6DC0 /* LoginAdminController.swift */,
+				7C89DDF629083424009184BA /* AdminController.swift */,
+				7C89DDFA29083C57009184BA /* RegisterController.swift */,
+				7C732BFE292E4B1900821983 /* ForgotUsernameController.swift */,
+				7C732C02292E4B3100821983 /* ForgotPasswordController.swift */,
+				7C732C08292E593F00821983 /* ChangeUsernameController.swift */,
+				7C86D6F8292F9542008BA466 /* ChangePasswordController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7C2C74FE2A48666A004FFB7E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7CC4C968290561A30020ED27 /* HomeScreenController.storyboard */,
+				7CC4C97B290566220020ED27 /* MyAccountController.xib */,
+				7CCAC400293A0AC1006F6DC0 /* LoginAdminController.xib */,
+				7C89DDF729083424009184BA /* AdminController.xib */,
+				7C89DDFB29083C57009184BA /* RegisterController.xib */,
+				7C732C06292E4F0700821983 /* ForgotUsernameController.xib */,
+				7C732C03292E4B3100821983 /* ForgotPasswordController.xib */,
+				7C732C09292E593F00821983 /* ChangeUsernameController.xib */,
+				7C86D6F9292F9542008BA466 /* ChangePasswordController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7C5089292916780200FCDDA9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7C231D06292A84C700A7959E /* Users.swift */,
+				7C648A97292FC79900F1CBF1 /* Locations.swift */,
+				7CBCDA17292FF7710098CC6C /* UsersInDanger.swift */,
+				7C21C9B6293512A800C3DED4 /* Admins.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7CA22F1C29AE1DA60060B054 /* EmergencyApplicationWatch */ = {
+			isa = PBXGroup;
+			children = (
+				7CA22F1D29AE1DA60060B054 /* Interface.storyboard */,
+				7CA22F2029AE1DAA0060B054 /* Assets.xcassets */,
+			);
+			path = EmergencyApplicationWatch;
+			sourceTree = "<group>";
+		};
+		7CA22F2A29AE1DAA0060B054 /* EmergencyApplicationWatch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7CD0583B29C5E97D00BECA46 /* AnimatedHeart.sks */,
+				7CB9B22429C084EA002183F0 /* EmergencyApplicationWatch WatchKit Extension.entitlements */,
+				7CA22F2B29AE1DAA0060B054 /* InterfaceController.swift */,
+				7CA22F2D29AE1DAA0060B054 /* ExtensionDelegate.swift */,
+				7CA22F2F29AE1DAA0060B054 /* NotificationController.swift */,
+				7CA22F3129AE1DAA0060B054 /* ComplicationController.swift */,
+				7CA22F3329AE1DAD0060B054 /* Assets.xcassets */,
+				7CA22F3529AE1DAD0060B054 /* Info.plist */,
+				7CA22F3629AE1DAD0060B054 /* PushNotificationPayload.apns */,
+			);
+			path = "EmergencyApplicationWatch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		7CC4C956290561A30020ED27 = {
+			isa = PBXGroup;
+			children = (
+				7CC4C961290561A30020ED27 /* EmergencyApplication */,
+				7CA22F1C29AE1DA60060B054 /* EmergencyApplicationWatch */,
+				7CA22F2A29AE1DAA0060B054 /* EmergencyApplicationWatch WatchKit Extension */,
+				7CC4C960290561A30020ED27 /* Products */,
+				7C231CFE292A81BE00A7959E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7CC4C960290561A30020ED27 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7CC4C95F290561A30020ED27 /* EmergencyApplication.app */,
+				7CA22F1B29AE1DA60060B054 /* EmergencyApplicationWatch.app */,
+				7CA22F2629AE1DAA0060B054 /* EmergencyApplicationWatch WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7CC4C961290561A30020ED27 /* EmergencyApplication */ = {
+			isa = PBXGroup;
+			children = (
+				7C2C74FE2A48666A004FFB7E /* Views */,
+				7C2C74FD2A486660004FFB7E /* Controllers */,
+				7C5089292916780200FCDDA9 /* Models */,
+				7CC4C962290561A30020ED27 /* AppDelegate.swift */,
+				7CC4C964290561A30020ED27 /* SceneDelegate.swift */,
+				7CC4C96B290561A60020ED27 /* Assets.xcassets */,
+				7CD0583829C5DED900BECA46 /* EmergencyApplication.entitlements */,
+				7CC4C96D290561A60020ED27 /* LaunchScreen.storyboard */,
+				7CC4C970290561A60020ED27 /* Info.plist */,
+			);
+			path = EmergencyApplication;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7CA22F1A29AE1DA60060B054 /* EmergencyApplicationWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CA22F3E29AE1DAD0060B054 /* Build configuration list for PBXNativeTarget "EmergencyApplicationWatch" */;
+			buildPhases = (
+				7CA22F1929AE1DA60060B054 /* Resources */,
+				7CA22F3D29AE1DAD0060B054 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7CA22F2929AE1DAA0060B054 /* PBXTargetDependency */,
+			);
+			name = EmergencyApplicationWatch;
+			productName = EmergencyApplicationWatch;
+			productReference = 7CA22F1B29AE1DA60060B054 /* EmergencyApplicationWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		7CA22F2529AE1DAA0060B054 /* EmergencyApplicationWatch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CA22F3A29AE1DAD0060B054 /* Build configuration list for PBXNativeTarget "EmergencyApplicationWatch WatchKit Extension" */;
+			buildPhases = (
+				7CA22F2229AE1DAA0060B054 /* Sources */,
+				7CA22F2329AE1DAA0060B054 /* Frameworks */,
+				7CA22F2429AE1DAA0060B054 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "EmergencyApplicationWatch WatchKit Extension";
+			productName = "EmergencyApplicationWatch WatchKit Extension";
+			productReference = 7CA22F2629AE1DAA0060B054 /* EmergencyApplicationWatch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		7CC4C95E290561A30020ED27 /* EmergencyApplication */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CC4C973290561A60020ED27 /* Build configuration list for PBXNativeTarget "EmergencyApplication" */;
+			buildPhases = (
+				7CC4C95B290561A30020ED27 /* Sources */,
+				7CC4C95C290561A30020ED27 /* Frameworks */,
+				7CC4C95D290561A30020ED27 /* Resources */,
+				7CA22F4129AE1DAD0060B054 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7CA22F3829AE1DAD0060B054 /* PBXTargetDependency */,
+			);
+			name = EmergencyApplication;
+			packageProductDependencies = (
+				7C5F71552A45F35F00B45159 /* RealmSwift */,
+				7C5F71572A45F39200B45159 /* Realm */,
+			);
+			productName = EmergencyApplication;
+			productReference = 7CC4C95F290561A30020ED27 /* EmergencyApplication.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7CC4C957290561A30020ED27 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					7CA22F1A29AE1DA60060B054 = {
+						CreatedOnToolsVersion = 13.4;
+					};
+					7CA22F2529AE1DAA0060B054 = {
+						CreatedOnToolsVersion = 13.4;
+					};
+					7CC4C95E290561A30020ED27 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 7CC4C95A290561A30020ED27 /* Build configuration list for PBXProject "EmergencyApplication" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7CC4C956290561A30020ED27;
+			packageReferences = (
+				7C5F71522A45F35F00B45159 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
+			productRefGroup = 7CC4C960290561A30020ED27 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7CC4C95E290561A30020ED27 /* EmergencyApplication */,
+				7CA22F1A29AE1DA60060B054 /* EmergencyApplicationWatch */,
+				7CA22F2529AE1DAA0060B054 /* EmergencyApplicationWatch WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7CA22F1929AE1DA60060B054 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CA22F2129AE1DAA0060B054 /* Assets.xcassets in Resources */,
+				7CA22F1F29AE1DA60060B054 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CA22F2429AE1DAA0060B054 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CA22F3429AE1DAD0060B054 /* Assets.xcassets in Resources */,
+				7CD0583C29C5E97D00BECA46 /* AnimatedHeart.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CC4C95D290561A30020ED27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CCAC402293A0AC1006F6DC0 /* LoginAdminController.xib in Resources */,
+				7CC4C96F290561A60020ED27 /* LaunchScreen.storyboard in Resources */,
+				7C732C0B292E593F00821983 /* ChangeUsernameController.xib in Resources */,
+				7CC4C96C290561A60020ED27 /* Assets.xcassets in Resources */,
+				7C732C07292E4F0700821983 /* ForgotUsernameController.xib in Resources */,
+				7C89DDFD29083C57009184BA /* RegisterController.xib in Resources */,
+				7CC4C96A290561A30020ED27 /* HomeScreenController.storyboard in Resources */,
+				7C732C05292E4B3100821983 /* ForgotPasswordController.xib in Resources */,
+				7C89DDF929083424009184BA /* AdminController.xib in Resources */,
+				7C86D6FB292F9542008BA466 /* ChangePasswordController.xib in Resources */,
+				7CC4C97D290566220020ED27 /* MyAccountController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7CA22F2229AE1DAA0060B054 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CA22F3029AE1DAA0060B054 /* NotificationController.swift in Sources */,
+				7CA22F3229AE1DAA0060B054 /* ComplicationController.swift in Sources */,
+				7CA22F2E29AE1DAA0060B054 /* ExtensionDelegate.swift in Sources */,
+				7CA22F2C29AE1DAA0060B054 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CC4C95B290561A30020ED27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C21C9B7293512A800C3DED4 /* Admins.swift in Sources */,
+				7CC4C963290561A30020ED27 /* AppDelegate.swift in Sources */,
+				7CC4C977290563480020ED27 /* HomeScreenController.swift in Sources */,
+				7C86D6FA292F9542008BA466 /* ChangePasswordController.swift in Sources */,
+				7C732C0A292E593F00821983 /* ChangeUsernameController.swift in Sources */,
+				7C648A98292FC79900F1CBF1 /* Locations.swift in Sources */,
+				7C231D07292A84C700A7959E /* Users.swift in Sources */,
+				7CC4C965290561A30020ED27 /* SceneDelegate.swift in Sources */,
+				7C89DDFC29083C57009184BA /* RegisterController.swift in Sources */,
+				7C732C04292E4B3100821983 /* ForgotPasswordController.swift in Sources */,
+				7CC4C979290564EE0020ED27 /* LoginController.swift in Sources */,
+				7CCAC401293A0AC1006F6DC0 /* LoginAdminController.swift in Sources */,
+				7CBCDA18292FF7710098CC6C /* UsersInDanger.swift in Sources */,
+				7C89DDF829083424009184BA /* AdminController.swift in Sources */,
+				7CC4C97C290566220020ED27 /* MyAccountController.swift in Sources */,
+				7C732C00292E4B1900821983 /* ForgotUsernameController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7CA22F2929AE1DAA0060B054 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7CA22F2529AE1DAA0060B054 /* EmergencyApplicationWatch WatchKit Extension */;
+			targetProxy = 7CA22F2829AE1DAA0060B054 /* PBXContainerItemProxy */;
+		};
+		7CA22F3829AE1DAD0060B054 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7CA22F1A29AE1DA60060B054 /* EmergencyApplicationWatch */;
+			targetProxy = 7CA22F3729AE1DAD0060B054 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7CA22F1D29AE1DA60060B054 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7CA22F1E29AE1DA60060B054 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		7CC4C968290561A30020ED27 /* HomeScreenController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7CC4C969290561A30020ED27 /* Base */,
+			);
+			name = HomeScreenController.storyboard;
+			sourceTree = "<group>";
+		};
+		7CC4C96D290561A60020ED27 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7CC4C96E290561A60020ED27 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7CA22F3B29AE1DAD0060B054 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALTERNATE_GROUP = "";
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "EmergencyApplicationWatch WatchKit Extension/EmergencyApplicationWatch WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WBU33HT556;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "EmergencyApplicationWatch WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "EmergencyApplicationWatch WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				INSTALL_GROUP = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.petrusell.EmergencyApplication.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		7CA22F3C29AE1DAD0060B054 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALTERNATE_GROUP = "";
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "EmergencyApplicationWatch WatchKit Extension/EmergencyApplicationWatch WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WBU33HT556;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "EmergencyApplicationWatch WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "EmergencyApplicationWatch WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				INSTALL_GROUP = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.petrusell.EmergencyApplication.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		7CA22F3F29AE1DAD0060B054 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALTERNATE_GROUP = "";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WBU33HT556;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = EmergencyApplicationWatch_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = EmergencyApplicationWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.petrusell.EmergencyApplication;
+				INSTALL_GROUP = "";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.petrusell.EmergencyApplication.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		7CA22F4029AE1DAD0060B054 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALTERNATE_GROUP = "";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WBU33HT556;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = EmergencyApplicationWatch_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = EmergencyApplicationWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.petrusell.EmergencyApplication;
+				INSTALL_GROUP = "";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.petrusell.EmergencyApplication.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		7CC4C971290561A60020ED27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7CC4C972290561A60020ED27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7CC4C974290561A60020ED27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALTERNATE_GROUP = "";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CODE_SIGN_ENTITLEMENTS = EmergencyApplication/EmergencyApplication.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WBU33HT556;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EmergencyApplication/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INSTALL_GROUP = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.petrusell.EmergencyApplication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7CC4C975290561A60020ED27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALTERNATE_GROUP = "";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CODE_SIGN_ENTITLEMENTS = EmergencyApplication/EmergencyApplication.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WBU33HT556;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EmergencyApplication/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INSTALL_GROUP = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.petrusell.EmergencyApplication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7CA22F3A29AE1DAD0060B054 /* Build configuration list for PBXNativeTarget "EmergencyApplicationWatch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CA22F3B29AE1DAD0060B054 /* Debug */,
+				7CA22F3C29AE1DAD0060B054 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7CA22F3E29AE1DAD0060B054 /* Build configuration list for PBXNativeTarget "EmergencyApplicationWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CA22F3F29AE1DAD0060B054 /* Debug */,
+				7CA22F4029AE1DAD0060B054 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7CC4C95A290561A30020ED27 /* Build configuration list for PBXProject "EmergencyApplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CC4C971290561A60020ED27 /* Debug */,
+				7CC4C972290561A60020ED27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7CC4C973290561A60020ED27 /* Build configuration list for PBXNativeTarget "EmergencyApplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CC4C974290561A60020ED27 /* Debug */,
+				7CC4C975290561A60020ED27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7C5F71522A45F35F00B45159 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.40.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7C5F71552A45F35F00B45159 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7C5F71522A45F35F00B45159 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		7C5F71572A45F39200B45159 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7C5F71522A45F35F00B45159 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 7CC4C957290561A30020ED27 /* Project object */;
+}

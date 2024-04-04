@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginAdminController" customModule="EmergencyApplication" customModuleProvider="target">
+            <connections>
+                <outlet property="loginButton" destination="tmO-WV-Zx7" id="l68-xN-DSi"/>
+                <outlet property="passwordConstraint" destination="D2H-8g-zs2" id="Coq-IV-Ilj"/>
+                <outlet property="passwordTextfield" destination="c3D-dM-9DZ" id="rW2-iL-Xsq"/>
+                <outlet property="usernameConstraint" destination="i3x-Sr-sA9" id="O1e-3N-FE0"/>
+                <outlet property="usernameTextfield" destination="Kbl-eg-wyh" id="c6a-O4-gko"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder=" Username or Email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Kbl-eg-wyh">
+                    <rect key="frame" x="20" y="261.66666666666669" width="374" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="Jmd-tE-OYy"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MalayalamSangamMN" family="Malayalam Sangam MN" pointSize="16"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder=" Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="c3D-dM-9DZ">
+                    <rect key="frame" x="20" y="326.66666666666669" width="374" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="Lqj-3k-8Hf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MalayalamSangamMN" family="Malayalam Sangam MN" pointSize="16"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WIl-W0-sFQ">
+                    <rect key="frame" x="172.66666666666666" y="132" width="69" height="34.666666666666657"/>
+                    <fontDescription key="fontDescription" name="MalayalamSangamMN" family="Malayalam Sangam MN" pointSize="29"/>
+                    <color key="textColor" name="AppColor"/>
+                    <color key="highlightedColor" systemColor="linkColor"/>
+                    <color key="shadowColor" systemColor="labelColor"/>
+                    <size key="shadowOffset" width="0.0" height="0.0"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tmO-WV-Zx7">
+                    <rect key="frame" x="20" y="391.66666666666669" width="374" height="35"/>
+                    <color key="backgroundColor" name="AppColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="1pn-Me-VZR"/>
+                    </constraints>
+                    <color key="tintColor" systemColor="systemGray5Color"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Log In">
+                        <color key="baseForegroundColor" systemColor="systemGray5Color"/>
+                    </buttonConfiguration>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="1pn-Me-VZR"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="1pn-Me-VZR"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="loginTappedWith_sender:" destination="-1" eventType="touchUpInside" id="7IF-0d-JVl"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WI0-3w-ykH">
+                    <rect key="frame" x="354" y="64" width="40" height="30"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="cancelGrey"/>
+                    <connections>
+                        <action selector="exitButtonTapped:" destination="-1" eventType="touchUpInside" id="T24-QG-mv1"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Kbl-eg-wyh" secondAttribute="trailing" constant="20" id="1RZ-9y-Keh"/>
+                <constraint firstItem="Kbl-eg-wyh" firstAttribute="leading" relation="lessThanOrEqual" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="8qH-BX-B4a"/>
+                <constraint firstItem="tmO-WV-Zx7" firstAttribute="top" secondItem="c3D-dM-9DZ" secondAttribute="bottom" constant="30" id="Cn9-aa-X02"/>
+                <constraint firstItem="c3D-dM-9DZ" firstAttribute="top" secondItem="Kbl-eg-wyh" secondAttribute="bottom" constant="30" id="CrZ-Tm-cBG"/>
+                <constraint firstItem="c3D-dM-9DZ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="D2H-8g-zs2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="tmO-WV-Zx7" secondAttribute="trailing" constant="20" id="Ik4-FG-Oor"/>
+                <constraint firstItem="Kbl-eg-wyh" firstAttribute="top" secondItem="WIl-W0-sFQ" secondAttribute="bottom" constant="20" id="JMG-Jv-rj0"/>
+                <constraint firstItem="c3D-dM-9DZ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="JbY-1e-4IG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="c3D-dM-9DZ" secondAttribute="trailing" constant="20" id="Mo5-23-lSD"/>
+                <constraint firstItem="WIl-W0-sFQ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="88" id="RiT-if-YTk"/>
+                <constraint firstItem="WI0-3w-ykH" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="YEA-S2-Zyp"/>
+                <constraint firstItem="Kbl-eg-wyh" firstAttribute="leading" relation="lessThanOrEqual" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="bHz-6I-BMW"/>
+                <constraint firstItem="tmO-WV-Zx7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="c0x-dw-1sw"/>
+                <constraint firstItem="WIl-W0-sFQ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="eM0-cT-esh"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="WI0-3w-ykH" secondAttribute="trailing" constant="20" id="gDW-av-vkA"/>
+                <constraint firstItem="WIl-W0-sFQ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="hyw-2a-6dH"/>
+                <constraint firstItem="Kbl-eg-wyh" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="i3x-Sr-sA9"/>
+                <constraint firstItem="tmO-WV-Zx7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="iDw-hk-mjV"/>
+                <constraint firstItem="Kbl-eg-wyh" firstAttribute="top" secondItem="WIl-W0-sFQ" secondAttribute="bottom" constant="95" id="kOi-SS-N2r"/>
+                <constraint firstItem="c3D-dM-9DZ" firstAttribute="leading" relation="lessThanOrEqual" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="xvo-2y-sQJ"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="8qH-BX-B4a"/>
+                    <exclude reference="JMG-Jv-rj0"/>
+                    <exclude reference="bHz-6I-BMW"/>
+                    <exclude reference="kOi-SS-N2r"/>
+                    <exclude reference="JbY-1e-4IG"/>
+                    <exclude reference="xvo-2y-sQJ"/>
+                    <exclude reference="RiT-if-YTk"/>
+                    <exclude reference="hyw-2a-6dH"/>
+                    <exclude reference="c0x-dw-1sw"/>
+                    <exclude reference="iDw-hk-mjV"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=compact-widthClass=regular">
+                <mask key="constraints">
+                    <include reference="8qH-BX-B4a"/>
+                    <include reference="JMG-Jv-rj0"/>
+                    <include reference="xvo-2y-sQJ"/>
+                    <include reference="hyw-2a-6dH"/>
+                    <include reference="c0x-dw-1sw"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="constraints">
+                    <include reference="bHz-6I-BMW"/>
+                    <include reference="kOi-SS-N2r"/>
+                    <include reference="JbY-1e-4IG"/>
+                    <include reference="RiT-if-YTk"/>
+                    <include reference="iDw-hk-mjV"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="139" y="92"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cancelGrey" width="16" height="16"/>
+        <namedColor name="AppColor">
+            <color red="0.14509803921568629" green="0.32549019607843138" blue="0.58431372549019611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
